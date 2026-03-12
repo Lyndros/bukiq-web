@@ -1,0 +1,47 @@
+---
+const steps = [
+  {
+    number: '1',
+    title: 'El cliente llama para reservar',
+    description: 'Tu cliente marca el número del restaurante como siempre. No necesita descargar ninguna app ni hacer nada diferente.',
+  },
+  {
+    number: '2',
+    title: 'El asistente atiende la solicitud',
+    description: 'Bukiq recoge los datos de la reserva (fecha, hora, comensales) de forma natural y amable, como lo haría cualquier persona del equipo.',
+  },
+  {
+    number: '3',
+    title: 'La reserva queda organizada',
+    description: 'Toda la información aparece en tu panel de gestión, lista para que la revises y confirmes cuando te venga bien.',
+  },
+];
+---
+
+<section id="como-funciona" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-azul">Así de sencillo</h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        Tres pasos. Sin complicaciones. Tu restaurante empieza a atender reservas por voz de forma automática.
+      </p>
+    </div>
+
+    <div class="relative">
+      <!-- Línea conectora (solo desktop) -->
+      <div class="hidden lg:block absolute top-16 left-1/2 -translate-x-1/2 w-2/3 h-0.5 bg-azul/10"></div>
+
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+        {steps.map((step) => (
+          <div class="relative text-center">
+            <div class="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-azul text-white text-xl font-bold mb-6 relative z-10">
+              {step.number}
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
+            <p class="text-gray-600 leading-relaxed">{step.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+---
+const faqs = [
+  {
+    question: '¿Qué es exactamente Bukiq?',
+    answer: 'Bukiq es una herramienta para restaurantes que combina un asistente de voz con un panel de gestión de reservas. El asistente atiende las llamadas de tus clientes las 24 horas y gestiona las solicitudes de reserva, mientras tú controlas todo desde un panel claro y sencillo.',
+  },
+  {
+    question: '¿Cómo funciona el asistente de voz?',
+    answer: 'Cuando un cliente llama a tu restaurante, el asistente de Bukiq atiende la llamada de forma natural. Recoge los datos necesarios (fecha, hora, número de comensales) y registra la solicitud en tu panel para que la revises y confirmes cuando te venga bien.',
+  },
+  {
+    question: '¿Sirve para cualquier tipo de restaurante?',
+    answer: 'Sí. Bukiq está diseñado para funcionar en cualquier restaurante que reciba reservas por teléfono, desde pequeños locales hasta negocios con alto volumen de llamadas. Se adapta a tu forma de trabajar.',
+  },
+  {
+    question: '¿Necesito formación técnica para usarlo?',
+    answer: 'No. El panel de Bukiq es muy intuitivo y no requiere conocimientos técnicos. Si sabes usar un móvil, sabrás usar Bukiq. Además, nuestro equipo te acompaña en la puesta en marcha.',
+  },
+  {
+    question: '¿Qué incluye el panel de gestión?',
+    answer: 'El panel te permite ver las reservas del día, revisar nuevas solicitudes recibidas por voz, consultar próximas reservas, gestionar la disponibilidad de mesas y ver la actividad reciente. Todo en una interfaz clara y organizada.',
+  },
+  {
+    question: '¿Cómo puedo solicitar una demo?',
+    answer: 'Puedes reservar una demo de 30 minutos directamente desde esta página haciendo clic en «Solicitar demo». Se abrirá nuestro calendario para que elijas la fecha y hora que mejor te venga. También puedes escribirnos a hola@bukiq.com y te atenderemos encantados.',
+  },
+];
+---
+
+<section id="faq" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-azul">Preguntas frecuentes</h2>
+      <p class="mt-4 text-lg text-gray-600">
+        Resolvemos las dudas más habituales sobre Bukiq.
+      </p>
+    </div>
+
+    <div class="space-y-3">
+      {faqs.map((faq, index) => (
+        <details class="group bg-gray-50 rounded-xl border border-gray-100 overflow-hidden" open={index === 0}>
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 text-left">
+            <span class="text-base font-semibold text-gray-900 pr-4">{faq.question}</span>
+            <svg
+              class="w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200 group-open:rotate-180"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="px-6 pb-5">
+            <p class="text-gray-600 leading-relaxed">{faq.answer}</p>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>

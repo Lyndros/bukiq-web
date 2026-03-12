@@ -1,0 +1,39 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-900 text-gray-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="flex flex-col sm:flex-row items-center gap-4">
+        <a href="/" class="flex-shrink-0">
+          <img
+            src="/bukiq-logo.svg"
+            alt="Bukiq"
+            class="h-8 w-auto brightness-0 invert"
+          />
+        </a>
+        <span class="hidden sm:inline text-gray-700">|</span>
+        <span class="text-sm text-gray-500">Reservas atendidas, siempre.</span>
+      </div>
+
+      <a
+        href="mailto:hola@bukiq.com"
+        class="text-sm hover:text-white transition-colors"
+      >
+        hola@bukiq.com
+      </a>
+    </div>
+
+    <nav class="mt-8 pt-8 border-t border-gray-800 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm">
+      <a href="/aviso-legal" class="hover:text-white transition-colors">Aviso legal</a>
+      <a href="/privacidad" class="hover:text-white transition-colors">Privacidad</a>
+      <a href="/cookies" class="hover:text-white transition-colors">Cookies</a>
+      <a href="/terminos" class="hover:text-white transition-colors">Términos del servicio</a>
+    </nav>
+
+    <div class="mt-6 text-center text-sm text-gray-600">
+      &copy; {currentYear} Bukiq. Todos los derechos reservados.
+    </div>
+  </div>
+</footer>

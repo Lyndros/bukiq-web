@@ -1,0 +1,85 @@
+---
+const benefits = [
+  {
+    title: 'No pierdas oportunidades de reserva',
+    description: 'Cada llamada es atendida, tanto en horas punta como fuera de horario. Ningún cliente se queda sin respuesta.',
+    icon: 'trending',
+  },
+  {
+    title: 'Reduce la carga operativa',
+    description: 'Menos tiempo al teléfono significa más tiempo para atender bien el servicio y preparar la sala.',
+    icon: 'zap',
+  },
+  {
+    title: 'Atención incluso fuera de horario',
+    description: 'Tu restaurante sigue recibiendo y gestionando reservas aunque las puertas estén cerradas.',
+    icon: 'clock',
+  },
+  {
+    title: 'Trabaja con más orden',
+    description: 'Un panel centralizado con toda la información que tu equipo necesita para organizarse mejor.',
+    icon: 'layout',
+  },
+  {
+    title: 'Una atención más constante',
+    description: 'Tus clientes siempre reciben respuesta cuando llaman. Eso se traduce en confianza y recurrencia.',
+    icon: 'heart',
+  },
+];
+---
+
+<section id="beneficios" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-azul">
+        Resultados que notarás desde el primer día
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        Bukiq no es solo tecnología. Es una herramienta pensada para que tu restaurante funcione mejor.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {benefits.map((benefit, index) => (
+        <div class:list={[
+          "flex gap-4",
+          index === benefits.length - 1 && "sm:col-span-2 lg:col-span-1 sm:max-w-md sm:mx-auto lg:max-w-none"
+        ]}>
+          <div class="flex-shrink-0">
+            <div class="w-11 h-11 rounded-xl bg-verde/10 flex items-center justify-center">
+              {benefit.icon === 'trending' && (
+                <svg class="w-5 h-5 text-verde" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              )}
+              {benefit.icon === 'zap' && (
+                <svg class="w-5 h-5 text-verde" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              )}
+              {benefit.icon === 'clock' && (
+                <svg class="w-5 h-5 text-verde" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              )}
+              {benefit.icon === 'layout' && (
+                <svg class="w-5 h-5 text-verde" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                </svg>
+              )}
+              {benefit.icon === 'heart' && (
+                <svg class="w-5 h-5 text-verde" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              )}
+            </div>
+          </div>
+          <div>
+            <h3 class="text-base font-bold text-gray-900 mb-1">{benefit.title}</h3>
+            <p class="text-sm text-gray-600 leading-relaxed">{benefit.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

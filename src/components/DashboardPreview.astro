@@ -1,0 +1,222 @@
+---
+---
+
+<section class="py-20 lg:py-28 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-azul">
+        Un panel diseñado para tu día a día
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        Controla las reservas de tu restaurante desde una interfaz clara, organizada y fácil de usar. Todo lo que necesitas, de un vistazo.
+      </p>
+    </div>
+
+    <!-- Dashboard simulado -->
+    <div class="max-w-5xl mx-auto">
+      <div class="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+        <!-- Barra superior -->
+        <div class="bg-azul px-6 py-3.5 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <span class="text-white font-bold text-lg">Bukiq</span>
+            <span class="text-white/50 text-sm hidden sm:inline">|</span>
+            <span class="text-white/70 text-sm hidden sm:inline">Panel de reservas</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="relative">
+              <svg class="w-5 h-5 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+              </svg>
+              <span class="absolute -top-1 -right-1 w-4 h-4 bg-verde text-white text-[10px] font-bold rounded-full flex items-center justify-center">3</span>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center text-white text-sm font-semibold">
+              R
+            </div>
+          </div>
+        </div>
+
+        <div class="flex">
+          <!-- Sidebar -->
+          <div class="hidden md:flex flex-col w-52 border-r border-gray-100 bg-gray-50/50 py-4 px-3 gap-1">
+            <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-azul/5 text-azul font-medium text-sm">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+              Inicio
+            </a>
+            <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-100 text-sm transition-colors">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              Reservas
+            </a>
+            <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-100 text-sm transition-colors">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2m-4-1v8m0 0l3-3m-3 3L9 8m-5 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293h3.172a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293H20" />
+              </svg>
+              Solicitudes
+              <span class="ml-auto bg-verde text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full">3</span>
+            </a>
+            <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-100 text-sm transition-colors">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6z" />
+              </svg>
+              Disponibilidad
+            </a>
+            <a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-600 hover:bg-gray-100 text-sm transition-colors">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              Ajustes
+            </a>
+          </div>
+
+          <!-- Contenido principal -->
+          <div class="flex-1 p-5 lg:p-6 space-y-5">
+            <!-- Estadísticas -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+              <div class="bg-azul/5 rounded-xl p-4">
+                <div class="text-2xl font-bold text-azul">12</div>
+                <div class="text-xs text-gray-500 mt-1">Reservas hoy</div>
+              </div>
+              <div class="bg-verde/10 rounded-xl p-4">
+                <div class="text-2xl font-bold text-verde flex items-center gap-1.5">
+                  3
+                  <span class="text-[10px] font-semibold bg-verde text-white px-1.5 py-0.5 rounded-full">Nuevas</span>
+                </div>
+                <div class="text-xs text-gray-500 mt-1">Solicitudes pendientes</div>
+              </div>
+              <div class="bg-azul/5 rounded-xl p-4">
+                <div class="text-2xl font-bold text-azul">48</div>
+                <div class="text-xs text-gray-500 mt-1">Reservas esta semana</div>
+              </div>
+              <div class="bg-gray-50 rounded-xl p-4">
+                <div class="text-2xl font-bold text-gray-700">92%</div>
+                <div class="text-xs text-gray-500 mt-1">Llamadas atendidas</div>
+              </div>
+            </div>
+
+            <div class="grid lg:grid-cols-5 gap-5">
+              <!-- Tabla de reservas -->
+              <div class="lg:col-span-3">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="text-sm font-semibold text-gray-900">Reservas de hoy</h3>
+                  <span class="text-xs text-azul font-medium">Ver todas</span>
+                </div>
+                <div class="space-y-2">
+                  <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3">
+                    <div class="w-8 h-8 rounded-full bg-azul/10 flex items-center justify-center text-xs font-bold text-azul flex-shrink-0">GL</div>
+                    <div class="flex-1 min-w-0">
+                      <div class="text-sm font-medium text-gray-900">García López</div>
+                      <div class="text-xs text-gray-500">4 comensales · Mesa 3</div>
+                    </div>
+                    <div class="text-right flex-shrink-0">
+                      <div class="text-sm font-medium text-gray-900">13:30</div>
+                      <span class="text-[10px] font-medium text-verde">Confirmada</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3">
+                    <div class="w-8 h-8 rounded-full bg-verde/10 flex items-center justify-center text-xs font-bold text-verde flex-shrink-0">RS</div>
+                    <div class="flex-1 min-w-0">
+                      <div class="text-sm font-medium text-gray-900">Rodríguez Sanz</div>
+                      <div class="text-xs text-gray-500">2 comensales · Mesa 7</div>
+                    </div>
+                    <div class="text-right flex-shrink-0">
+                      <div class="text-sm font-medium text-gray-900">14:00</div>
+                      <span class="text-[10px] font-medium text-yellow-600">Pendiente</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3">
+                    <div class="w-8 h-8 rounded-full bg-azul/10 flex items-center justify-center text-xs font-bold text-azul flex-shrink-0">SM</div>
+                    <div class="flex-1 min-w-0">
+                      <div class="text-sm font-medium text-gray-900">Sánchez Muñoz</div>
+                      <div class="text-xs text-gray-500">6 comensales · Mesa 1</div>
+                    </div>
+                    <div class="text-right flex-shrink-0">
+                      <div class="text-sm font-medium text-gray-900">14:30</div>
+                      <span class="text-[10px] font-medium text-verde">Confirmada</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3 bg-gray-50 rounded-lg p-3">
+                    <div class="w-8 h-8 rounded-full bg-azul/10 flex items-center justify-center text-xs font-bold text-azul flex-shrink-0">FR</div>
+                    <div class="flex-1 min-w-0">
+                      <div class="text-sm font-medium text-gray-900">Fernández Ruiz</div>
+                      <div class="text-xs text-gray-500">3 comensales · Mesa 5</div>
+                    </div>
+                    <div class="text-right flex-shrink-0">
+                      <div class="text-sm font-medium text-gray-900">15:00</div>
+                      <span class="text-[10px] font-medium text-verde">Confirmada</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Panel lateral: mesas y actividad -->
+              <div class="lg:col-span-2 space-y-5">
+                <!-- Estado de mesas -->
+                <div>
+                  <h3 class="text-sm font-semibold text-gray-900 mb-3">Estado de mesas</h3>
+                  <div class="grid grid-cols-3 gap-2">
+                    <div class="bg-verde/10 border border-verde/20 rounded-lg p-2.5 text-center">
+                      <div class="text-sm font-bold text-verde">1</div>
+                      <div class="text-[10px] text-gray-500">Ocupada</div>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-2.5 text-center">
+                      <div class="text-sm font-bold text-gray-400">2</div>
+                      <div class="text-[10px] text-gray-500">Libre</div>
+                    </div>
+                    <div class="bg-verde/10 border border-verde/20 rounded-lg p-2.5 text-center">
+                      <div class="text-sm font-bold text-verde">3</div>
+                      <div class="text-[10px] text-gray-500">Ocupada</div>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-2.5 text-center">
+                      <div class="text-sm font-bold text-gray-400">4</div>
+                      <div class="text-[10px] text-gray-500">Libre</div>
+                    </div>
+                    <div class="bg-azul/5 border border-azul/10 rounded-lg p-2.5 text-center">
+                      <div class="text-sm font-bold text-azul">5</div>
+                      <div class="text-[10px] text-gray-500">Reservada</div>
+                    </div>
+                    <div class="bg-gray-50 border border-gray-200 rounded-lg p-2.5 text-center">
+                      <div class="text-sm font-bold text-gray-400">6</div>
+                      <div class="text-[10px] text-gray-500">Libre</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Actividad reciente -->
+                <div>
+                  <h3 class="text-sm font-semibold text-gray-900 mb-3">Actividad reciente</h3>
+                  <div class="space-y-3">
+                    <div class="flex items-start gap-2.5">
+                      <div class="w-1.5 h-1.5 rounded-full bg-verde mt-1.5 flex-shrink-0"></div>
+                      <div>
+                        <p class="text-xs text-gray-700">Nueva solicitud de voz atendida</p>
+                        <p class="text-[10px] text-gray-400">Hace 5 min</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-2.5">
+                      <div class="w-1.5 h-1.5 rounded-full bg-azul mt-1.5 flex-shrink-0"></div>
+                      <div>
+                        <p class="text-xs text-gray-700">Reserva confirmada: García López</p>
+                        <p class="text-[10px] text-gray-400">Hace 12 min</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start gap-2.5">
+                      <div class="w-1.5 h-1.5 rounded-full bg-verde mt-1.5 flex-shrink-0"></div>
+                      <div>
+                        <p class="text-xs text-gray-700">Llamada atendida por asistente</p>
+                        <p class="text-[10px] text-gray-400">Hace 25 min</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

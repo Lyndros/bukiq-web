@@ -1,0 +1,89 @@
+---
+const features = [
+  {
+    title: 'Asistente de voz 24/7',
+    description: 'Atiende las llamadas de reserva a cualquier hora, incluso cuando el restaurante está cerrado o el equipo no puede contestar.',
+    icon: 'phone',
+  },
+  {
+    title: 'Gestión centralizada',
+    description: 'Todas las reservas en un solo panel, organizadas y accesibles para todo el equipo en cualquier momento.',
+    icon: 'layout',
+  },
+  {
+    title: 'Menos llamadas perdidas',
+    description: 'No vuelvas a perder una reserva porque nadie pudo coger el teléfono a tiempo. Bukiq responde siempre.',
+    icon: 'shield',
+  },
+  {
+    title: 'Panel claro e intuitivo',
+    description: 'Una interfaz sencilla para ver, gestionar y organizar las reservas del día sin complicaciones.',
+    icon: 'eye',
+  },
+  {
+    title: 'Mejor organización',
+    description: 'Planifica los turnos y el servicio con información actualizada sobre las reservas y la disponibilidad.',
+    icon: 'calendar',
+  },
+  {
+    title: 'Más tiempo para tu equipo',
+    description: 'Reduce las interrupciones telefónicas y deja que tu personal se centre en lo que importa: atender al cliente.',
+    icon: 'users',
+  },
+];
+---
+
+<section id="funcionalidades" class="py-20 lg:py-28 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-azul">
+        Todo lo que necesitas para gestionar tus reservas
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        Bukiq combina un asistente de voz inteligente con un panel de gestión claro para que tu restaurante no pierda ni una reserva.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {features.map((feature) => (
+        <div class="bg-white rounded-xl p-6 lg:p-8 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 rounded-xl bg-azul/5 flex items-center justify-center mb-5">
+            {feature.icon === 'phone' && (
+              <svg class="w-6 h-6 text-azul" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            )}
+            {feature.icon === 'layout' && (
+              <svg class="w-6 h-6 text-azul" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+              </svg>
+            )}
+            {feature.icon === 'shield' && (
+              <svg class="w-6 h-6 text-azul" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            )}
+            {feature.icon === 'eye' && (
+              <svg class="w-6 h-6 text-azul" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+            )}
+            {feature.icon === 'calendar' && (
+              <svg class="w-6 h-6 text-azul" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            )}
+            {feature.icon === 'users' && (
+              <svg class="w-6 h-6 text-azul" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            )}
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">{feature.title}</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

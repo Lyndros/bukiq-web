@@ -1,0 +1,41 @@
+---
+import MainLayout from './MainLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<MainLayout title={title} description={description}>
+  <header class="bg-white border-b border-gray-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between">
+      <a href="/" class="inline-flex items-center gap-2 text-sm text-azul hover:text-azul/80 transition-colors">
+        &larr; Volver a la página principal
+      </a>
+      <nav class="hidden sm:flex items-center gap-4 text-xs text-gray-400">
+        <a href="/aviso-legal" class="hover:text-azul transition-colors">Aviso legal</a>
+        <a href="/privacidad" class="hover:text-azul transition-colors">Privacidad</a>
+        <a href="/cookies" class="hover:text-azul transition-colors">Cookies</a>
+        <a href="/terminos" class="hover:text-azul transition-colors">Términos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="py-16 lg:py-24">
+    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 prose prose-gray prose-headings:text-azul prose-a:text-azul">
+      <slot />
+    </article>
+  </main>
+
+  <footer class="border-t border-gray-100 py-8">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-gray-400">
+      <a href="/aviso-legal" class="hover:text-azul transition-colors">Aviso legal</a>
+      <a href="/privacidad" class="hover:text-azul transition-colors">Privacidad</a>
+      <a href="/cookies" class="hover:text-azul transition-colors">Cookies</a>
+      <a href="/terminos" class="hover:text-azul transition-colors">Términos</a>
+    </div>
+  </footer>
+</MainLayout>

@@ -1,0 +1,74 @@
+---
+const problems = [
+  'Llamadas perdidas en horas punta',
+  'Reservas que no llegan fuera de horario',
+  'Interrupciones constantes al personal de sala',
+  'Gestión desorganizada de las reservas',
+  'Falta de visibilidad sobre la ocupación real',
+];
+
+const solutions = [
+  'Un asistente de voz que atiende cada llamada',
+  'Atención de reservas 24 horas al día, 7 días',
+  'Tu equipo se centra en el servicio, sin interrupciones',
+  'Todas las reservas centralizadas en un solo panel',
+  'Visión clara de la disponibilidad en tiempo real',
+];
+---
+
+<section class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-azul">¿Te suena esto?</h2>
+      <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+        La gestión de reservas por teléfono es un problema real para muchos restaurantes. Bukiq lo resuelve.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 lg:gap-16">
+      <!-- Problemas -->
+      <div class="bg-red-50/50 border border-red-100 rounded-2xl p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
+            <svg class="w-5 h-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900">Sin Bukiq</h3>
+        </div>
+        <ul class="space-y-4">
+          {problems.map((problem) => (
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="text-gray-700">{problem}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Soluciones -->
+      <div class="bg-verde/5 border border-verde/20 rounded-2xl p-8">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-full bg-verde/10 flex items-center justify-center">
+            <svg class="w-5 h-5 text-verde" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900">Con Bukiq</h3>
+        </div>
+        <ul class="space-y-4">
+          {solutions.map((solution) => (
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-verde flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span class="text-gray-700">{solution}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
